@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" href="General.css">
+    <link rel="stylesheet" href="Top.css">
+    <link rel="stylesheet" href="Videos.css">
+    <link rel="stylesheet" href="sidebar.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+      a{
+        text-decoration: none;
+        text-decoration-color: black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="header" style="z-index: 5;">
+      <div class="left-section">
+        <img class="hamburger-menu" src="Icons/hamburger-menu.svg">
+        <img class="youtube-logo" src="Icons/youtube-logo.svg">
+      </div>
+
+      <div class="middle-section">
+        <input class="search-bar" type="text" placeholder="Search">
+        <button class="search-button">
+          <img class="search-icon" src="Icons/search.svg">
+          <div class="tool-tip">Search</div>
+        </button>
+        <button class="voice-button">
+            <img class="voice-icon" src="Icons/voice-search-icon.svg">
+        </button>
+      </div>
+
+      <div class="right-section">
+        <img class="upload-icon" src="Icons/upload.svg">
+        <img class="youtube-apps-icon" src="Icons/youtube-apps.svg">
+        <div style="position: relative;">
+          <img class="notification-icon" src="Icons/notifications.svg">
+          <div class="notification-count">
+            7
+          </div>
+        </div>
+        <img class="user-picture" src="CHannel pictures/channels4_profile.jpg">
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <div class="sidebar-link">
+        <img src="Icons/home.svg">
+        <div>Home</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/explore.svg">
+        <div>Explore</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/subscriptions.svg">
+        <div>Subscriptions</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/originals.svg">
+        <div>Originals</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/youtube-music.svg">
+        <div>Youtube Music</div>
+      </div>
+      <div class="sidebar-link">
+        <img src="Icons/library.svg">
+        <div>Library</div>
+      </div>
+    </div>
+
+    <div style="
+      display: grid;
+      grid-template: 1fr 1fr 1fr 1fr;
+      padding-top: 70px;
+      padding-left: 80px;
+      margin-right: 15px;
+    ">
+      <div class="video-grid2">
+        <a href = "https://www.youtube.com/watch?v=n2RNcPRtAiY&ab_channel=MarquesBrownlee" target = "_blank">
+          <div class="video-preview">   
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+              <div class="video-time">14:20</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/channel-1.jpeg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="author">
+                  Marques Brownlee
+                </p>
+                <p class="video-stats">
+                  3.4M views &#183; 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <a href = "https://www.youtube.com/watch?v=mP0RAo9SKZk&ab_channel=Markiplier" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-2.webp">
+              <div class="video-time">8:22</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/channel-2.jpeg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  Try Not to Laugh Challenge #9
+                </p>
+                <p class="author">
+                  Markiplier
+                </p>
+                <p class="video-stats">
+                  19M views &#183; 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href = "https://www.youtube.com/watch?v=YPNpY-6O0ao&ab_channel=EragonCR" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/eragon.webp">
+              <div class="video-time">24:23</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/eragon-cr.jpg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  IM #14 IN THE WORLD 🌎🥇
+                </p>
+                <p class="author">
+                  Eragon CR
+                </p>
+                <p class="video-stats">
+                  5k views &#183; 3 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <a href = "https://www.youtube.com/watch?v=QRt7LjqJ45k&ab_channel=Veritasium" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/veritasium.webp">
+              <div class="video-time">21:10</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/veritasium.jpg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  How to Slow Aging (and even reverse it)
+                </p>
+                <p class="author">
+                  Veritasium
+                </p>
+                <p class="video-stats">
+                  5.7M views &#183; 2 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <div class="video-grid2">
+        <a href = "https://www.youtube.com/watch?v=n2RNcPRtAiY&ab_channel=MarquesBrownlee" target = "_blank">
+          <div class="video-preview">   
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+              <div class="video-time">14:20</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/channel-1.jpeg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="author">
+                  Marques Brownlee
+                </p>
+                <p class="video-stats">
+                  3.4M views &#183; 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <a href = "https://www.youtube.com/watch?v=mP0RAo9SKZk&ab_channel=Markiplier" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-2.webp">
+              <div class="video-time">8:22</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/channel-2.jpeg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  Try Not to Laugh Challenge #9
+                </p>
+                <p class="author">
+                  Markiplier
+                </p>
+                <p class="video-stats">
+                  19M views &#183; 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href = "https://www.youtube.com/watch?v=YPNpY-6O0ao&ab_channel=EragonCR" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/eragon.webp">
+              <div class="video-time">24:23</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/eragon-cr.jpg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  IM #14 IN THE WORLD 🌎🥇
+                </p>
+                <p class="author">
+                  Eragon CR
+                </p>
+                <p class="video-stats">
+                  5k views &#183; 3 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href = "https://www.youtube.com/watch?v=QRt7LjqJ45k&ab_channel=Veritasium" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/veritasium.webp">
+              <div class="video-time">21:10</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/veritasium.jpg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  How to Slow Aging (and even reverse it)
+                </p>
+                <p class="author">
+                  Veritasium
+                </p>
+                <p class="video-stats">
+                  5.7M views &#183; 2 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+        
+      <div class="video-grid2">
+        <a href = "https://www.youtube.com/watch?v=n2RNcPRtAiY&ab_channel=MarquesBrownlee" target = "_blank">
+          <div class="video-preview">   
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="thumbnails/thumbnail-1.webp">
+              <div class="video-time">14:20</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/channel-1.jpeg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  Talking Tech and AI with Google CEO Sundar Pichai!
+                </p>
+                <p class="author">
+                  Marques Brownlee
+                </p>
+                <p class="video-stats">
+                  3.4M views &#183; 6 months ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+        
+        <a href = "https://www.youtube.com/watch?v=mP0RAo9SKZk&ab_channel=Markiplier" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/thumbnail-2.webp">
+              <div class="video-time">8:22</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/channel-2.jpeg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  Try Not to Laugh Challenge #9
+                </p>
+                <p class="author">
+                  Markiplier
+                </p>
+                <p class="video-stats">
+                  19M views &#183; 4 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href = "https://www.youtube.com/watch?v=YPNpY-6O0ao&ab_channel=EragonCR" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/eragon.webp">
+              <div class="video-time">24:23</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/eragon-cr.jpg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  IM #14 IN THE WORLD 🌎🥇
+                </p>
+                <p class="author">
+                  Eragon CR
+                </p>
+                <p class="video-stats">
+                  5k views &#183; 3 hours ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href = "https://www.youtube.com/watch?v=QRt7LjqJ45k&ab_channel=Veritasium" target = "_blank">
+          <div class="video-preview">
+            <div class="thumbnail-row">
+              <img class="thumbnail" src="Thumbnails/veritasium.webp">
+              <div class="video-time">21:10</div>
+            </div>
+            <div class="video-grid">
+              <div class="channel-pictures">
+                <img class="channel-picture" src="CHannel pictures/veritasium.jpg">
+              </div>
+              <div class="descriptions">
+                <p class="video-title">
+                  How to Slow Aging (and even reverse it)
+                </p>
+                <p class="author">
+                  Veritasium
+                </p>
+                <p class="video-stats">
+                  5.7M views &#183; 2 years ago
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
